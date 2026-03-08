@@ -1,6 +1,5 @@
 import re
 from collections import defaultdict, Counter
-
 # candump -l 格式常见形态：
 # (1700000000.123456) vcan0 123#1122334455667788
 PAT = re.compile(r"\((?P<ts>[\d\.]+)\)\s+(?P<if>\S+)\s+(?P<id>[0-9A-Fa-f]+)#(?P<data>[0-9A-Fa-f]*)")
